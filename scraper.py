@@ -6,7 +6,7 @@ import requests
 WEBHOOK_URL = os.getenv('DISCORD_WEBHOOK')
 
 # URL de recherche avec la Bounding Box centrée sur Paris et proche banlieue
-CROUS_URL = "https://trouverunlogement.lescrous.fr/tools/36/search?bounds=2.2241_48.9021_2.4697_48.8155"
+CROUS_URL = "https://trouverunlogement.lescrous.fr/tools/45/search?bounds=2.2241_48.9021_2.4697_48.8155"
 
 def send_discord_alert(message):
     if WEBHOOK_URL:
